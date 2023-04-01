@@ -5,7 +5,12 @@
 .logo{
     width: 100px;
 }
-
+.foto-ingreso{
+    width: 500px;
+}
+.carrito{
+    width: 100px;
+}
 .menu-superior{
     text-align: right;
 }
@@ -30,7 +35,9 @@
 .row {
     font-family: 'Ubuntu', sans-serif;
 }
-
+.container-fluid{
+    font-family: 'Ubunto',sans-serif;
+}
 
 /* footer */
 
