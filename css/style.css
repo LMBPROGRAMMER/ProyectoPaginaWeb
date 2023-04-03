@@ -5,6 +5,15 @@
 .logo{
     width: 100px;
 }
+.nosotros{
+    text-align: center;
+}
+.imagen-admins{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .carrito{
     width: 100px;
@@ -26,7 +35,9 @@
 .carousel{
     overflow:hidden;
 }
-
+.fondo-inicio {
+    background-color: white;
+}
 .carousel-item img {
     height: 500px;
     object-fit: cover;
@@ -39,7 +50,26 @@
 .container-fluid{
     font-family: 'Ubunto',sans-serif;
 }
+.nombretienda{
+    font-family: 'Ubunto',sans-serif;
+}
+.texto-nosotros{
+        font-size: 30px;
+        font-family: 'Delicious Handrawn', cursive;
+}
+.correo-luciano{
+    font-size: 30px;
+    text-align: center;
+}
+.correo-damian{
+    font-size: 30px;
+    text-align: center;
+}
 
+.correo-rosario{
+    font-size: 30px;
+    text-align: center;
+}
 /* footer */
 
 .footer {
