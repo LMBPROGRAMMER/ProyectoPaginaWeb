@@ -5,11 +5,12 @@
 .logo{
     width: 100px;
 }
-.foto-ingreso{
-    width: 500px;
-}
+
 .carrito{
     width: 100px;
+}
+#purina_plus{
+    height: 600px;
 }
 .menu-superior{
     text-align: right;
