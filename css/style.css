@@ -43,16 +43,18 @@
     object-fit: cover;
     border-radius: 1px;
 }
-.imgencheck{
-    width: 10px;
-}
+
 /* fuetes */
 .sacodoko{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 50px;
-    margin-right:30px;
+    font-size: 30px;
+    text-align: right;
     overflow:hidden;
 
+}
+.precio{
+    font-size: 50px;
+    color: green;
 }
 .row {
     font-family: 'Ubuntu', sans-serif;
@@ -66,7 +68,7 @@
 }
 .texto-nosotros{
         font-size: 30px;
-        font-family: 'Delicious Handrawn', cursive;
+        font-family: 'Ubunto',sans-serif;
 }
 .correo-luciano{
     font-size: 30px;
@@ -77,15 +79,17 @@
     text-align: center;
 }
 
-.correo-rosario{
-    font-size: 30px;
-    text-align: center;
+
+
+.foto-usuarios{
+    width: 30px;
+
 }
 /* footer */
 
 .footer {
     background: rgb(12, 190, 235);
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 .footer__top {
