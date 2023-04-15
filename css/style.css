@@ -1,90 +1,123 @@
 /* div{
      /* border: 1px solid black;  */
-/* } */ 
+/* } */
 
-.logo{
+.logo {
     width: 100px;
 }
-.nosotros{
+
+.nosotros {
     text-align: center;
 }
-.imagen-admins{
+
+.imagen-admins {
     width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.carrito{
+.container-ropa {
+    border: #12191a;
+}
+
+.carrito {
     width: 100px;
 }
-#purina_plus{
+
+#purina_plus {
     height: 600px;
 }
-.menu-superior{
+
+.menu-superior {
     text-align: right;
 }
-.menu-superior li{
-    display:inline;
+
+.menu-superior li {
+    display: inline;
     margin-right: 20px;
 }
 
-.producto{
+.producto {
     width: 100%;
 }
-.carousel{
-    overflow:hidden;
+
+.carousel {
+    overflow: hidden;
 }
+
 .fondo-inicio {
     background-color: white;
 }
+
 .carousel-item img {
     height: 500px;
     object-fit: cover;
     border-radius: 1px;
 }
 
+.imge-segimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
 /* fuetes */
-.sacodoko{
+.sacodoko {
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
     text-align: right;
-    overflow:hidden;
+    overflow: hidden;
 
 }
-.precio{
+
+.precio {
     font-size: 50px;
     color: green;
 }
+
 .row {
     font-family: 'Ubuntu', sans-serif;
-    
+
 }
-.container-fluid{
-    font-family: 'Ubunto',sans-serif;
+
+.container-fluid {
+    font-family: 'Ubunto', sans-serif;
 }
-.nombretienda{
-    font-family: 'Ubunto',sans-serif;
+
+.nombretienda {
+    font-family: 'Ubunto', sans-serif;
 }
-.texto-nosotros{
-        font-size: 30px;
-        font-family: 'Ubunto',sans-serif;
+
+.texto-nosotros {
+    font-size: 30px;
+    font-family: 'Ubunto', sans-serif;
 }
-.correo-luciano{
+
+.correo-luciano {
     font-size: 30px;
     text-align: center;
 }
-.correo-damian{
+
+.correo-damian {
     font-size: 30px;
     text-align: center;
 }
 
 
 
-.foto-usuarios{
+.foto-usuarios {
     width: 30px;
 
 }
+
+.texto-concurso {
+    font-size: 50px;
+    text-align: center;
+    color: #13a2b7;
+}
+
 /* footer */
 
 .footer {
