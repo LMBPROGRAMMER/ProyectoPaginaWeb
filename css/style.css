@@ -95,15 +95,8 @@
     font-family: 'Ubunto', sans-serif;
 }
 
-.correo-luciano {
-    font-size: 30px;
-    text-align: center;
-}
 
-.correo-damian {
-    font-size: 30px;
-    text-align: center;
-}
+
 
 
 
@@ -122,13 +115,13 @@
 
 .footer {
     background: rgb(12, 190, 235);
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 .footer__top {
-    padding-bottom: 40px;
+    padding-bottom: 70px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 65px;
+    margin-bottom: 75px;
 }
 
 .footer__logo {
