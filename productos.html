@@ -66,85 +66,80 @@
 
     <!-- formulario de cliente -->
     <form class="row g-3 needs-validation" novalidate>
-        <div class="container-fluid">
-            <!-- todos los datos del cliente -->
-            <div class="row">
-                <!-- datos del cliente -->
-                <div class="col-se-12 col-md-6" id="datos">
-                    <div class="mb-3">
-                        <label for="Id" class="form-label">ID</label>
-                        <input required type="text" class="form-control" id="Id"
-                            aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text"></div>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="Categorias" class="form-label">Categorias</label>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Categorias
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Perros</a></li>
-                              <li><a class="dropdown-item" href="#">Gatos</a></li>
-                              <li><a class="dropdown-item" href="#">Hamsters</a></li>
-                            </ul>
-                          </div>
-                    </div>
-
-
-                    <div class="mb-3">
-                        <label for="Nombres" class="form-label">Nombres</label>
-                        <input type="text" class="form-control"
-                            id="Nombres" aria-describedby="emailHelp">
-                    </div>
-
-
-                    <div class="mb-3">
-                        <label for="Descripcion" class="form-label">Descripcion</label>
-                        <textarea rows="4"
-                            class="form-control" id="Descripcion" aria-describedby="emailHelp"></textarea>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="Precio" class="form-label">Precio</label>
-                        <input type="text" class="form-control"
-                            id="precio" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="Descuento-subscriptor" class="form-label">Descuento Subscriptor</label>
-                        <input type="text" class="form-control"
-                            id="descuentoSubscriptor" aria-describedby="emailHelp">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="Descuento-oferta" class="form-label">Descuento por Oferta</label>
-                        <input type="text" class="form-control"
-                            id="descuento-oferta">
-                    </div>
-
-
-                </div>
-
-                <!-- foto cliente -->
-                <div class="col-se-12 col-md-6" id="foto">
-                    <img src="img/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
-                    <p><button type="search" class="btn btn-primary">Examinar</button></p>
-                </div>
+      <div class="container-fluid">
+        <!-- todos los datos del cliente -->
+        <div class="row">
+          <!-- datos del cliente -->
+          <div class="col-se-12 col-md-6" id="datos">
+            <div class="mb-3">
+              <label for="Id" class="form-label">ID</label>
+              <input required type="text" class="form-control" id="Id" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text"></div>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
             </div>
-            <!-- botones -->
-            <div class="row" id="botones">
-                <div class="col text-left">
-                    <button type="submit" class="btn btn-primary">Guardar</button>
-                    <button type="new" class="btn btn-primary">Nuevo</button>
-                    <button type="reset" class="btn btn-primary">Eliminar</button>
-                </div>
+
+            <div class="mb-3">
+              <label for="Categorias" class="form-label">Categorias</label>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Categorias
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Perros</a></li>
+                  <li><a class="dropdown-item" href="#">Gatos</a></li>
+                  <li><a class="dropdown-item" href="#">Hamsters</a></li>
+                </ul>
+              </div>
             </div>
+
+
+            <div class="mb-3">
+              <label for="Nombres" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="Nombres" aria-describedby="emailHelp">
+            </div>
+
+
+            <div class="mb-3">
+              <label for="Descripcion" class="form-label">Descripcion</label>
+              <textarea rows="4" class="form-control" id="Descripcion" aria-describedby="emailHelp"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="Precio" class="form-label">Precio</label>
+              <input type="text" class="form-control" id="precio" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="Descuento-subscriptor" class="form-label">Descuento Subscriptor</label>
+              <input type="text" class="form-control" id="descuentoSubscriptor" aria-describedby="emailHelp">
+            </div>
+
+            <div class="mb-3">
+              <label for="Descuento-oferta" class="form-label">Descuento por Oferta</label>
+              <input type="text" class="form-control" id="descuento-oferta">
+            </div>
+
+
+          </div>
+
+          <!-- foto cliente -->
+          <div class="col-se-12 col-md-6" id="foto">
+            <img src="img/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
+            <p><button type="search" class="btn btn-primary">Examinar</button></p>
+          </div>
         </div>
+        <!-- botones -->
+        <div class="row" id="botones">
+          <div class="col text-left">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+            <button type="new" class="btn btn-primary">Nuevo</button>
+            <button type="reset" class="btn btn-primary">Eliminar</button>
+          </div>
+        </div>
+      </div>
     </form>
 
     <!-- lista mas id -->
@@ -174,9 +169,9 @@
                 <td scope="col">10%</td>
               </tr>
               </tr>
-              <tfoot>
-                </tr>
-              </tfoot>
+            <tfoot>
+              </tr>
+            </tfoot>
             </tbody>
           </table>
         </section>
@@ -184,31 +179,32 @@
     </main>
 
 
-        <!-- pie de pagina -->
-        <div class="row">
-            <div class="col">
-              <!-- FOOTER -->
-              <footer class="footer">
-                <div class="container">
-                  <div class="row">
-                    <!-- REDES -->
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                      <div class="footer__address">
-                        <h5>Síguenos</h5>
-                        <ul>
-                          <li><i class="fa fa-map-marker"></i> Santiago, RM, Chile.</li>
-                          <li><i class="fa fa-instagram"></i>@home_animals</li>
-                          <li><i class="fa fa-twitter"></i>@home_animalstw</li>
-                          <li><i class="fa fa-envelope"></i> home_animals@gmail.com</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-              </footer>
-      
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-                crossorigin="anonymous"></script>
-      </body>
-      
-      </html>
+    <!--::::Pie de Pagina::::::-->
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="">
+              <img src="img/logo.jpg_rial.jpeg" alt="Logo de SLee Dw">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Santiago, RM, Chile.</p>
+          <p>@home_animals</p>
+          <p>@home_animalstw</p>
+          <p>home_animals@gmail.com</p>
+        </div>
+
+      </div>
+  </div>
+  
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
