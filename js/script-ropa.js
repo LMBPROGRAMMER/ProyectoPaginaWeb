@@ -1,4 +1,5 @@
 
+
 // Hacer una petición a la API
 fetch('https://fakestoreapi.com/products')
     .then(response => response.json()) // Convertir la respuesta a JSON
