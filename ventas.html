@@ -24,51 +24,7 @@
                 <img class="logo" src="img/logo.jpg_rial.jpeg" alt="">
             </div>
             <!-- menu  inici-nosotros-registro-ingresar-->
-            <div class="col-10 menu-superior">
-                <ul>
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="inicio.html">Inicio</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="registro.html">Registrarse</a>
-                                    </li>
-                                    <li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="ingresar.html">Cerrar sesion</a>
-                                    </li>
-                                    <li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="carrito.html">Carrito</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="misCompras.html">Mis Compras</a>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="misdatos.html">Mis Datos</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="administracion.html">Administrar</a>
-                                    </li>
-                                    </li>
-                                </ul>
-                                <form class="d-flex" role="search">
-                                    <input class="form-control me-2" type="search" placeholder="Search"
-                                        aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form>
-                            </div>
-                        </div>
-                    </nav>
-            </div>
+            <div id="menu-superior"></div>
         </div>
         <h2 class="nombretienda">House Animals</h2>
         <!-- Historial de ventas -->
@@ -78,233 +34,147 @@
                 <section class="text-center">
                     <h1>Historial de ventas</h1>
                     <br>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Fechas de compra 23/03/2023
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <th scope="col">Nro boleta</th>
-                                            <th scope="col">Nombre cliente</th>
-                                            <th scope="col" class="d-none d-lg-block d-lg-table-cell">Subscrito</th>
-                                            <th scope="col" class="text-end">Monto total</th>
-                                            <th scope="col">Estado Actual</th>
-                                            <th scope="col">Detalle</th>
-                                            <th scope="col">Cambiar estado</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td scope="row">361</td>
-                                                <td scope="col">Marcela</td>
-                                                <td scope="col" class="d-none d-lg-block d-lg-table-cell">si</td>
-                                                <td scope="col" class="text-end">$15.000</td>
-                                                <td scope="col">despachado</td>
-                                                <td scope="col">
-                                                    <div class="row" id="botones">
-                                                        <div class="col text-center">
-                                                            <button type="search" class="btn btn-primary">Ver
-                                                                detalles</button>
-                                                        </div>
-                                                </td>
-                                                <td scope="col">
-                                                    <div class="row" id="botones">
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">anulado</button>
-                                                        </div>
-                                                        <p></p>
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">vendido</button>
-                                                        </div>
-                                                </td>
-                                                <td scope="col">
-                                                    <div class="row" id="botones">
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">despachado</button>
-                                                        </div>
-                                                        <p></p>
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">entregado</button>
-                                                        </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Fecha de compra 25/03/2023
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <th scope="col">Nro boleta</th>
-                                            <th scope="col">Nombre cliente</th>
-                                            <th scope="col" class="d-none d-lg-block d-lg-table-cell">Subscrito</th>
-                                            <th scope="col" class="text-end">Monto total</th>
-                                            <th scope="col">Estado Actual</th>
-                                            <th scope="col">Detalle</th>
-                                            <th scope="col">Cambiar estado</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td scope="row">56</td>
-                                                <td scope="col">Pedro</td>
-                                                <td scope="col" class="d-none d-lg-block d-lg-table-cell">si</td>
-                                                <td scope="col" class="text-end">$26.000</td>
-                                                <td scope="col">anulado</td>
-                                                <td scope="col">
-                                                    <div class="row" id="botones">
-                                                        <div class="col text-center">
-                                                            <button type="search" class="btn btn-primary">Ver
-                                                                detalles</button>
-                                                        </div>
-                                                </td>
-                                                <td scope="col">
-                                                    <div class="row" id="botones">
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">anulado</button>
-                                                        </div>
-                                                        <p></p>
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">vendido</button>
-                                                        </div>
-                                                </td>
-                                                <td scope="col">
-                                                    <div class="row" id="botones">
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">despachado</button>
-                                                        </div>
-                                                        <p></p>
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">entregado</button>
-                                                        </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Fecha de compra 01/04/2023
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <th scope="col">Nro boleta</th>
-                                            <th scope="col">Nombre cliente</th>
-                                            <th scope="col" class="d-none d-lg-block d-lg-table-cell">Subscrito</th>
-                                            <th scope="col" class="text-end">Monto total</th>
-                                            <th scope="col">Estado Actual</th>
-                                            <th scope="col">Detalle</th>
-                                            <th scope="col">Cambiar estado</th>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td scope="row">562</td>
-                                                <td scope="col">Juan</td>
-                                                <td scope="col" class="d-none d-lg-block d-lg-table-cell">si</td>
-                                                <td scope="col" class="text-end">$26.887</td>
-                                                <td scope="col">entregado</td>
-                                                <td scope="col">
-                                                    <div class="row" id="botones">
-                                                        <div class="col text-center">
-                                                            <button type="search" class="btn btn-primary">Ver
-                                                                detalles</button>
-                                                        </div>
-                                                </td>
-                                                <td scope="col">
-                                                    <div class="row" id="botones">
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">anulado</button>
-                                                        </div>
-                                                        <p></p>
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">vendido</button>
-                                                        </div>
-                                                </td>
-                                                <td scope="col">
-                                                    <div class="row" id="botones">
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">despachado</button>
-                                                        </div>
-                                                        <p></p>
-                                                        <div class="col text-center">
-                                                            <button type="search"
-                                                                class="btn btn-primary">entregado</button>
-                                                        </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                            <th scope="col">Nro boleta</th>
+                            <th scope="col">Nombre cliente</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col" class="d-none d-lg-block d-lg-table-cell">Subscriptor</th>
+                            <th scope="col" class="text-end">Monto total</th>
+                            <th scope="col">Estado Actual</th>
+                            <th scope="col">Detalle</th>
+                            <th scope="col">Cambiar estado</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">361</td>
+                                <td scope="col">Marcela</td>
+                                <td scope="col">23/03/2023</td>
+                                <td scope="col" class="d-none d-lg-block d-lg-table-cell">si</td>
+                                <td scope="col" class="text-end">$15.000</td>
+                                <td scope="col">despachado</td>
+                                <td scope="col">
+                                    <div class="row" id="botones">
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">Ver
+                                                detalles</button>
+                                        </div>
+                                </td>
+                                <td scope="col">
+                                    <div class="row" id="botones">
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">anulado</button>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">vendido</button>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">despachado</button>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">entregado</button>
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td scope="row">56</td>
+                                <td scope="col">Pedro</td>
+                                <td scope="col">25/03/2023</td>
+                                <td scope="col" class="d-none d-lg-block d-lg-table-cell">si</td>
+                                <td scope="col" class="text-end">$26.000</td>
+                                <td scope="col">anulado</td>
+                                <td scope="col">
+                                    <div class="row" id="botones">
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">Ver
+                                                detalles</button>
+                                        </div>
+                                </td>
+                                <td scope="col">
+                                    <div class="row" id="botones">
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">anulado</button>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">vendido</button>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">despachado</button>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">entregado</button>
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td scope="row">562</td>
+                                <td scope="col">Juan</td>
+                                <td scope="col">01/04/2023</td>
+                                <td scope="col" class="d-none d-lg-block d-lg-table-cell">si</td>
+                                <td scope="col" class="text-end">$26.887</td>
+                                <td scope="col">entregado</td>
+                                <td scope="col">
+                                    <div class="row" id="botones">
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">Ver
+                                                detalles</button>
+                                        </div>
+                                </td>
+                                <td scope="col">
+                                    <div class="row" id="botones">
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">anulado</button>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">vendido</button>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">despachado</button>
+                                        </div>
+                                        <div class="col text-center">
+                                            <button type="search" class="btn btn-primary">entregado</button>
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div>
-            </table>
-        </main>
-        <br>
-        <br>
-        <br>
-        
-                <!--::::Pie de Pagina::::::-->
-                <footer class="pie-pagina">
-                    <div class="grupo-1">
-                        <div class="box">
-                            <figure>
-                                <a href="">
-                                    <img src="img/logo.jpg_rial.jpeg" alt="Logo de SLee Dw">
-                                </a>
-                            </figure>
-                        </div>
-                        <div class="box">
-                            <h2>SOBRE NOSOTROS</h2>
-                            <p>Santiago, RM, Chile.</p>
-                            <p>@home_animals</p>
-                            <p>@home_animalstw</p>
-                            <p>home_animals@gmail.com</p>
-                        </div>
+    </div>
+    <br>
+    <br>
+    <br>
 
-                    </div>
+    <!--::::Pie de Pagina::::::-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="">
+                        <img src="img/logo.jpg_rial.jpeg" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
             </div>
-            
-            </footer>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Santiago, RM, Chile.</p>
+                <p>@home_animals</p>
+                <p>@home_animalstw</p>
+                <p>home_animals@gmail.com</p>
+            </div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-                crossorigin="anonymous"></script>
+        </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
