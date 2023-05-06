@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <style>
+            .error {
+                color: red;
+                font-weight: bolder;
+            }
+        </style>
 </head>
 
 <body>
@@ -24,101 +30,98 @@
         <!-- titulo -->
         <h1>Mis Datos</h1>
         <br>
+        <!-- foto cliente -->
+        <div class="col-se-12 col-md-6" id="foto">
+            <img src="img/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
+            <form>
+                <div class="form-group">
+                    <h3>Cambiar Foto</h3>
+                    <button type="submit" class="btn btn-primary">Selecciona imagen</button>
+                </div>
+            </form>
+        </div>
 
         <!-- formulario de cliente -->
-        <form class="row g-3 needs-validation" novalidate>
-            <div class="container-fluid">
-                <!-- todos los datos del cliente -->
-                <div class="row">
-                    <!-- datos del cliente -->
-                    <div class="col-se-12 col-md-6" id="datos">
-                        <div class="mb-3">
-                            <label for="Rut" class="form-label">RUT</label>
-                            <input required type="text" placeholder="Ej 10123123-k" class="form-control" id="Rut"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+        <div class="col-se-12 col-md-6" id="datos">
+            <div class="md-6">
+                <form method="POST" id="formulario1" action="recibir_datos">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <br>
+                            <label for="rut">Rut</label>
+                            <input type="text" id="rut" name="rut" placeholder="Ingrese su rut aquí"
+                                class="form-control" value="" />
                         </div>
 
-                        <div class="mb-3">
-                            <label for="Nombres" class="form-label">NOMBRES</label>
-                            <input type="text" placeholder="Escriba todos sus nombres" class="form-control" id="Nombres"
-                                aria-describedby="emailHelp">
+                        <div class="form-group">
+                            <br>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre aquí"
+                                class="form-control" value="" />
                         </div>
 
-
-                        <div class="mb-3">
-                            <label for="Apellidos" class="form-label">APELLIDOS</label>
-                            <input type="text" placeholder="Escriba todos sus apellidos" class="form-control"
-                                id="Apellidos" aria-describedby="emailHelp">
+                        <div class="form-group">
+                            <br>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido aquí"
+                                class="form-control" value="" />
                         </div>
 
-                        <div class="mb-3">
-                            <label for="Correo" class="form-label">CORREO</label>
-                            <input type="email" placeholder="EJ: andorra@gmail.com" class="form-control" id="Apellidos"
-                                aria-describedby="emailHelp">
+                        <div class="form-group">
+                            <br>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="Ingrese su email aquí" value="" />
                         </div>
 
-
-                        <div class="mb-3">
-                            <label for="Direccion" class="form-label">DIRECCION</label>
+                        <div class="form-grup">
+                            <br>
+                            <label for="direccion" class="form-label">Direccion</label>
                             <textarea rows="4" placeholder="Escriba su direccion Ej Las condes 2020"
-                                class="form-control" id="Direccion" aria-describedby="emailHelp"></textarea>
+                                class="form-control" id="direccion" aria-describedby="" required></textarea>
                         </div>
 
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <div class="md-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="desea-suscribirse<">
                             <label class="form-check-label" for="exampleCheck1">Deseas suscribirte</label>
                         </div>
 
-                        <div class="mb-3">
-                            <label for="exampleInputContraseña1" class="form-label">CONTRASEÑA</label>
-                            <input type="password" placeholder="EJ 123Ae." class="form-control"
-                                id="exampleInputPassword1">
+                        <div class="form-group">
+                            <br>
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" name="password" class="form-control"
+                                placeholder="Ingresar contraseña de al menos 5 caracteres" value="" />
                         </div>
-
-                        <div class="mb-3">
-                            <label for="exampleInputContraseña1" class="form-label"> REPETIR CONTRASEÑA</label>
-                            <input type="password" placeholder="EJ 123Ae." class="form-control"
-                                id="exampleInputPassword1">
+                        <div class="form-group">
+                            <br>
+                            <label for="password2">Repetir la Contraseña</label>
+                            <input type="password2" id="password2" name="password2" class="form-control"
+                                placeholder="la contraseña tiene que ser igual " value="" />
                         </div>
-
                     </div>
-
-                    <!-- foto cliente -->
-                    <div class="col-se-12 col-md-6" id="foto">
-                        <img
-                            src="img/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
-                        <form>
-                            <div class="form-group">
-                                <h3>Cambiar Foto</h3>
-                                <button type="submit" class="btn btn-primary">Selecciona imagen</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- botones -->
-                <div class="row" id="botones">
-                    <div class="col text-center">
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                        <button type="reset" class="btn btn-primary">Limpiar</button>
-                    </div>
-                </div>
             </div>
-        </form>
 
-        <!-- pie de pagina -->
-        <br><br>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <svg xmlns="" width="16" height="16" fill="currentColor" class="" viewBox="0 0 16 16">
-                    <path d= />
-
+        </div>
+        <!-- botones -->
+        <div class="row" id="botones">
+            <div class="col text-center">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="reset" class="btn btn-primary">Limpiar</button>
             </div>
         </div>
+    </div>
+    </form>
+
+    <!-- pie de pagina -->
+    <br><br>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <svg xmlns="" width="16" height="16" fill="currentColor" class="" viewBox="0 0 16 16">
+                <path d= />
+
+        </div>
+    </div>
     </div>
     <!--::::Pie de Pagina::::::-->
     <footer class="pie-pagina">
@@ -146,6 +149,9 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+    <script src="js/validador.js" type="text/javascript"></script>
 </body>
 
 </html>
