@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
 
+
     // Agregar método de validación para RUT chileno
     $.validator.addMethod("rutChileno", function (value, element) {
         // Eliminar puntos y guión del RUT
@@ -37,27 +38,24 @@ $(document).ready(function () {
         return dv === lastChar;
     }, "Por favor ingrese un RUT válido.");
     // html-ingresar
-    $("#formulario1").validate({
+    $("#formulario_misdatos").validate({
         rules: {
-            id: {
-                required: true,
-                minlength: 5,
-            },
             rut: {
                 required: true,
                 rutChileno: true
             },
             nombre: {
                 required: true,
-                id: true,
             },
             apellido: {
                 required: true,
-                id: true,
             },
             email: {
                 required: true,
                 email: true,
+            },
+            direccion: {
+                required: true,
             },
             password: {
                 required: true,
@@ -65,31 +63,11 @@ $(document).ready(function () {
             },
             password2: {
                 required: true,
-                equalTo: "#password2",
+                equalTo: password,
             },
-            precio: {
-                required: true,
-                equalTo: "#precio",
-            },
-            descuentosub: {
-                required: true,
-                equalTo: "#decuentosub",
-            },
-            descuentoof: {
-                required: true,
-                equalTo: "#descuentoof",
-            },
-            cantidad: {
-                required: true,
-                equalTo: "#cantidad",
-            },
-            
+        
         }, // --> Fin de reglas
         messages: {
-            id: {
-                required: "El id es un campo requerido",
-                id: "El id no es correcto",
-            },
             rut: {
                 required: "El rut es un campo obligatorio",
                 rutChileno: "El formato del rut no es válido"
@@ -106,6 +84,9 @@ $(document).ready(function () {
                 required: "El email es un campo requerido",
                 email: "El email no cumple el formato de un correo",
             },
+            direccion: {
+                required: "La dirección es un campo requerido",
+            },
             password: {
                 required: "La contraseña es una campo obligatorio",
                 minlength: "Mínimo 5 caracteres",
@@ -113,22 +94,6 @@ $(document).ready(function () {
             password2: {
                 required: "Repita la contraseña anterior",
                 equalTo: "Debe ser igual al campo contraseña",
-            },
-            precio: {
-                required: "El precio es un campo requerido",
-                nombre: "El precio no es válido",
-            },
-            descuentosub: {
-                required: "El decuento por subscriptor es un campo requerido",
-                nombre: "El descuento no es válido",
-            },
-            descuentoof: {
-                required: "El decuento por oferta es un campo requerido",
-                nombre: "El descuento no es válido",
-            },
-            cantidad: {
-                required: "La cantidad es requerida",
-                nombre: "la cantidad no es válida",
             },
         },
     });

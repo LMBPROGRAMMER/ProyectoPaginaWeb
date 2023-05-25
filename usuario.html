@@ -22,115 +22,101 @@
 
 <body class="fondo-inicio">
 
-  <div class="container-fluid">
-    <div class="row">
-      <!-- menu superior -->
-      <div class="col-2">
-        <!-- logo -->
-        <img class="logo" src="img/logo.jpg_rial.jpeg" alt="">
-      </div>
-      <!-- menu  inici-nosotros-registro-ingresar-->
-      <div id="menu-superior"></div>
-    </div>
+  <!-- menu  inici-nosotros-registro-ingresar-->
+  <div id="menu-superior"></div>
 
-    <h1>mantenedor de Usuario</h1>
-    <!-- formulario de cliente -->
-    <div class="container-fluid">
-      <!-- todos los datos del cliente -->
-      <div class="row">
-        <!-- datos del cliente -->
-        <div class="col-se-12 col-md-6" id="datos">
-          <div class="md-6">
-            <form method="POST" id="formulario1" action="recibir_datos">
-              <div class="form-group">
-                <br>
-                <label for="id">Id</label>
-                <input type="id" id="id" name="id" placeholder="Ingrese su id aquí" class="form-control" value="" />
-              </div>
-              <br>
-              <div class="md-3 form-check">
-                <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required>
-                <label class="form-check-label" for="validationFormCheck1">Cliente</label>
-              </div>
+  <h1>Mantenedor de Usuario</h1>
+  <!-- formulario de cliente -->
+  <form method="POST" id="formulario2" action="recibir_datos">
+    <div class="row" id="datos">
+      <div class="col-sm-6">
 
-              <div class="md-3 form-check">
-                <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked">
-                <label class="form-check-label" for="validationFormCheck2">Administrador</label>
-              </div>
-
-              <div class="form-group">
-                <br>
-                <label for="rut">Rut</label>
-                <input type="text" id="rut" name="rut" placeholder="Ingrese su rut aquí" class="form-control"
-                  value="" />
-              </div>
-
-              <div class="form-group">
-                <br>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre aquí" class="form-control"
-                  value="" />
-              </div>
-
-              <div class="form-group">
-                <br>
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido aquí"
-                  class="form-control" value="" />
-              </div>
-
-              <div class="form-group">
-                <br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su email aquí"
-                  value="" />
-              </div>
-
-              <div class="form-grup">
-                <br>
-                <label for="direccion" class="form-label">Direccion</label>
-                <textarea rows="4" placeholder="Escriba su direccion Ej Las condes 2020" class="form-control"
-                  id="direccion" aria-describedby="" required></textarea>
-              </div>
-
-              <div class="form-group">
-                <br>
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" class="form-control"
-                  placeholder="Ingresar contraseña de al menos 5 caracteres" value="" />
-              </div>
-
-          </div>
+        <div class="form-group">
           <br>
-          <div class="md-3 form-check">
-            <input type="checkbox" class="form-check-input" id="desea-suscribirse<">
-            <label class="form-check-label" for="exampleCheck1">Deseas suscribirte</label>
-          </div>
-
-          <div>
-            <br>
-            <button type="new" class="btn btn-primary">GENERAR CONTRASEÑA</button>
-          </div>
-          </form>
+          <label for="id">Id</label>
+          <input type="id" id="id" name="id" placeholder="Ingrese su id aquí" class="form-control" value="" />
         </div>
-        <!-- foto cliente -->
-        <div class="col-se-12 col-md-6" id="foto">
-          <img src="img/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
-          <p><button type="search" class="btn btn-primary">Examinar</button></p>
+
+        <br>
+        <div class="md-3 form-check">
+          <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked">
+          <label class="form-check-label" for="validationFormCheck1">Cliente</label>
+        </div>
+
+        <div class="md-3 form-check">
+          <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked">
+          <label class="form-check-label" for="validationFormCheck2">Administrador</label>
+        </div>
+
+        <div class="form-group">
+          <br>
+          <label for="rut">Rut</label>
+          <input type="text" id="rut" name="rut" placeholder="Ingrese su rut aquí" class="form-control" value="" />
+        </div>
+
+        <div class="form-group">
+          <br>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre aquí" class="form-control"
+            value="" />
+        </div>
+
+        <div class="form-group">
+          <br>
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido aquí" class="form-control"
+            value="" />
+        </div>
+
+        <div class="form-group">
+          <br>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su email aquí"
+            value="" />
+        </div>
+
+        <div class="form-group">
+          <br>
+          <label for="direccion" class="form-label">Direccion</label>
+          <textarea rows="4" placeholder="Escriba su direccion Ej Las condes 2020" class="form-control" id="direccion"
+            name="direccion" aria-describedby="" required></textarea>
+        </div>
+
+        <div class="md-3 form-check">
+          <input type="checkbox" class="form-check-input" id="desea-suscribirse<">
+          <label class="form-check-label" for="exampleCheck1">Deseas suscribirte</label>
+        </div>
+
+        <div class="form-group">
+          <br>
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" class="form-control"
+            placeholder="Ingresar contraseña de al menos 5 caracteres" value="" />
+        </div>
+
+        <div>
+          <br>
+          <button type="button" class="btn btn-primary">GENERAR CONTRASEÑA</button>
+        </div>
+
+      </div>
+      <!-- foto cliente -->
+      <div class="col-sm-6"  id="foto">
+        <img src="img/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
+        <div class="form-group">
+          <h3>Elegir Foto</h3>
+          <button type="file" class="btn btn-primary">Examinar</button>
         </div>
       </div>
-
     </div>
-  </div>
-  <!-- botones -->
-  <div class="row" id="botones">
-    <div class="col text-center">
-      <button type="submit" class="btn btn-primary">Guardar</button>
-      <button type="new" class="btn btn-primary">Nuevo</button>
-      <button type="delte" class="btn btn-primary">Eliminar</button>
+    <div class="row">
+      <div class="col text-center">
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary">Nuevo</button>
+        <button type="reset" class="btn btn-primary">Eliminar</button>
+      </div>
     </div>
-  </div>
-  </div>
+  </form>
   <!-- lista mas id -->
   <header id="header"></header>
   <main role="main">
@@ -183,35 +169,16 @@
   </main>
 
   <!--::::Pie de Pagina::::::-->
-  <footer class="pie-pagina">
-    <div class="grupo-1">
-      <div class="box">
-        <figure>
-          <a href="">
-            <img src="img/logo.jpg_rial.jpeg" alt="Logo de SLee Dw">
-          </a>
-        </figure>
-      </div>
-      <div class="box">
-        <h2>SOBRE NOSOTROS</h2>
-        <p>Santiago, RM, Chile.</p>
-        <p>@home_animals</p>
-        <p>@home_animalstw</p>
-        <p>home_animals@gmail.com</p>
-      </div>
-
+  <div class="row">
+    <div id="footer">
     </div>
-    </div>
-
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
-  <script src="js/validador.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+    <script src="js/validador_usuario.js" type="text/javascript"></script>
 </body>
 
 </html>

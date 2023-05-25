@@ -8,150 +8,117 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <style>
-            .error {
-                color: red;
-                font-weight: bolder;
-            }
-        </style>
+    <style>
+        .error {
+            color: red;
+            font-weight: bolder;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- menu superior -->
-            <div class="col-2">
-                <!-- logo -->
-                <img class="logo" src="img/logo.jpg_rial.jpeg" alt="">
-            </div>
-            <!-- menu  inici-nosotros-registro-ingresar-->
-            <div id="menu-superior"></div>
-        </div>
-        <!-- titulo -->
-        <h1>Mis Datos</h1>
-        <br>
-        <!-- foto cliente -->
-        <div class="col-se-12 col-md-6" id="foto">
-            <img src="img/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
-            <form>
+
+    <!-- menu  inici-nosotros-registro-ingresar-->
+    <div id="menu-superior"></div>
+    </div>
+    <!-- titulo -->
+    <h1>Mis Datos</h1>
+    <br>
+    <!-- formulario de cliente -->
+    <form method="POST" id="formulario_misdatos" action="recibir_datos">
+        <div class="row" id="datos">
+            <div class="col-sm-6" >
+
                 <div class="form-group">
-                    <h3>Cambiar Foto</h3>
-                    <button type="submit" class="btn btn-primary">Selecciona imagen</button>
+                    <br>
+                    <label for="rut">Rut</label>
+                    <input type="text" id="rut" name="rut" placeholder="Ingrese su rut aquí" class="form-control"
+                        value="" />
                 </div>
-            </form>
-        </div>
 
-        <!-- formulario de cliente -->
-        <div class="col-se-12 col-md-6" id="datos">
-            <div class="md-6">
-                <form method="POST" id="formulario1" action="recibir_datos">
-                    <div class="form-group">
-                        <div class="form-group">
-                            <br>
-                            <label for="rut">Rut</label>
-                            <input type="text" id="rut" name="rut" placeholder="Ingrese su rut aquí"
-                                class="form-control" value="" />
-                        </div>
+                <div class="form-group">
+                    <br>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre aquí"
+                        class="form-control" value="" />
+                </div>
 
-                        <div class="form-group">
-                            <br>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre aquí"
-                                class="form-control" value="" />
-                        </div>
+                <div class="form-group">
+                    <br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido aquí"
+                        class="form-control" value="" />
+                </div>
 
-                        <div class="form-group">
-                            <br>
-                            <label for="apellido">Apellido</label>
-                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido aquí"
-                                class="form-control" value="" />
-                        </div>
+                <div class="form-group">
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su email aquí"
+                        value="" />
+                </div>
 
-                        <div class="form-group">
-                            <br>
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control"
-                                placeholder="Ingrese su email aquí" value="" />
-                        </div>
+                <div class="form-group">
+                    <br>
+                    <label for="direccion" class="form-label">Direccion</label>
+                    <textarea rows="4" placeholder="Escriba su direccion Ej Las condes 2020" class="form-control"
+                        id="direccion" name="direccion" aria-describedby="" required></textarea>
+                </div>
 
-                        <div class="form-grup">
-                            <br>
-                            <label for="direccion" class="form-label">Direccion</label>
-                            <textarea rows="4" placeholder="Escriba su direccion Ej Las condes 2020"
-                                class="form-control" id="direccion" aria-describedby="" required></textarea>
-                        </div>
+                <div class="md-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="desea-suscribirse<">
+                    <label class="form-check-label" for="exampleCheck1">Deseas suscribirte</label>
+                </div>
 
-                        <div class="md-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="desea-suscribirse<">
-                            <label class="form-check-label" for="exampleCheck1">Deseas suscribirte</label>
-                        </div>
+                <div class="form-group">
+                    <br>
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" class="form-control"
+                        placeholder="Ingresar contraseña de al menos 5 caracteres" value="" />
+                </div>
 
-                        <div class="form-group">
-                            <br>
-                            <label for="password">Contraseña</label>
-                            <input type="password" id="password" name="password" class="form-control"
-                                placeholder="Ingresar contraseña de al menos 5 caracteres" value="" />
-                        </div>
-                        <div class="form-group">
-                            <br>
-                            <label for="password2">Repetir la Contraseña</label>
-                            <input type="password2" id="password2" name="password2" class="form-control"
-                                placeholder="la contraseña tiene que ser igual " value="" />
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <br>
+                    <label for="password2">Repetir la Contraseña</label>
+                    <input type="password" id="password2" name="password2" class="form-control"
+                        placeholder="la contraseña tiene que ser igual a la anterior" value="" />
+                </div>
+
+                <div>
+                    <br>
+                    <button type="button" class="btn btn-primary">GENERAR CONTRASEÑA</button>
+                </div>
+
             </div>
-
+            <!-- foto cliente -->
+            <div class="col-sm-6"  id="foto">
+                <img src="img/user-sign-icon-person-symbol-human-avatar-isolated-on-white-backogrund-vector.jpg">
+                <div class="form-group">
+                    <h3>Elegir Foto</h3>
+                    <button type="file" class="btn btn-primary">Examinar</button>
+                </div>
+            </div>
         </div>
-        <!-- botones -->
-        <div class="row" id="botones">
+        <div class="row">
             <div class="col text-center">
                 <button type="submit" class="btn btn-primary">Guardar</button>
                 <button type="reset" class="btn btn-primary">Limpiar</button>
             </div>
         </div>
-    </div>
     </form>
-
-    <!-- pie de pagina -->
-    <br><br>
-    <hr>
-    <div class="row">
-        <div class="col">
-            <svg xmlns="" width="16" height="16" fill="currentColor" class="" viewBox="0 0 16 16">
-                <path d= />
-
-        </div>
     </div>
-    </div>
+
+
     <!--::::Pie de Pagina::::::-->
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box">
-                <figure>
-                    <a href="">
-                        <img src="img/logo.jpg_rial.jpeg" alt="Logo de SLee Dw">
-                    </a>
-                </figure>
-            </div>
-            <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>Santiago, RM, Chile.</p>
-                <p>@home_animals</p>
-                <p>@home_animalstw</p>
-                <p>home_animals@gmail.com</p>
-            </div>
-
+    <div class="row">
+        <div id="footer">
         </div>
-        </div>
-
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
-    <script src="js/validador.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+        <script src="js/validador_misdatos.js" type="text/javascript"></script>
 </body>
 
 </html>
